@@ -1,0 +1,58 @@
+.header {
+  height: 35vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #191a43 0%, #442d85 100%);
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  &__descr {
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    bottom: -200px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

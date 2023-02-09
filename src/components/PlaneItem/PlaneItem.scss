@@ -1,0 +1,46 @@
+.plane-item {
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    transform: scale(1.04);
+  }
+
+  &__capacity {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    background: linear-gradient(200.44deg, #4316db 13%, #9076e7 98%);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: #fff;
+    background: rgba(50, 61, 109, 0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 30px;
+    color: #2fb5fc;
+  }
+}
